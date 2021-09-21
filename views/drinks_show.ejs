@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drinks - Index View</title>
+  <title>Drinks - Show View</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <%= drink.name %>
   </h2>
   <img src="<%= drink.image %>" alt="picture of a <%= drink.name %>" />
-  <h3>A <%=drink.name %> costs $<%= drink.price %> dollars.</h3><br>
-  <a href="/drinks/">Back to Index</a>
+  <h3>A <%= drink.name %> costs $<%= drink.price %> dollars.</h3><br>
+  <a href="/menu/">Back to Index</a>
 </body>
 </html>

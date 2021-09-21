@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drinks - Index View</title>
+  <title>Menu - Index View</title>
 </head>
 
 <body>
@@ -16,10 +16,19 @@
     }
   </style>
   <h1>Welcome to gitPub!</h1>
+  <h2>Drinks</h2>
   <ul>
-    <% for (let i=0; i <=allDrinks.length -1; i++){ %>
+    <% for (let i=0; i <= menu[0].length -1; i++){ %>
       <li>
-        <a href="/drinks/<%=i%>"><%=allDrinks[i].name%></a>
+        <a href="/drinks/<%=i%>"><%=menu[0][i].name%></a>
+      </li>
+    <% } %>
+  </ul>
+  <h2>Food</h2>
+  <ul>
+    <% for (let i=0; i <= menu[1].length - 1; i++){ %>
+      <li>
+        <a href="/food/<%=i%>"><%=menu[1][i].name%></a>
       </li>
     <% } %>
   </ul>
